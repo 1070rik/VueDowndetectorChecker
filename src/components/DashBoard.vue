@@ -50,7 +50,7 @@
                     <Cross v-if="result.result != 0"></Cross>
                     <v-card-actions>
                       <v-spacer></v-spacer>
-                      <v-btn color="green darken-1" flat @click.native="dialog = false">Okay thanks!</v-btn>
+                      <v-btn color="dark" @click.native="dialog = false">Okay thanks!</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
