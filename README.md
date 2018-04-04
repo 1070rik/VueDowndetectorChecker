@@ -34,4 +34,5 @@ node index.js
 ## Disclaimer
 As the downdetector's Fair use policy states, it is not allowed to scrape their data and this can result into legal actions by downdetector. Only use this for educational purposes!
 
+## Reporting bugs
 Please report any problems/bugs on my Discord: CSS#8440
