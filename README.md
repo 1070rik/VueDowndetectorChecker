@@ -2,7 +2,7 @@
 
 > Material Vue application to check the status of an application's server
 
-## Application
+## Application setup
 
 ``` bash
 # install dependencies
