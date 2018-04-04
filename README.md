@@ -1,8 +1,8 @@
 # downdetector-vue
 
-> Downdetector in vue
+> Material Vue application to check the status of an application's server
 
-## Build Setup
+## Application
 
 ``` bash
 # install dependencies
@@ -18,4 +18,17 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## API setup
+
+``` bash
+# go into right directory
+cd server
+
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+node index.js
+```
+
+Please report any problems/bugs on my Discord: CSS#8440
