@@ -11,7 +11,7 @@
         <v-divider></v-divider>
         <v-list-tile v-for="top in top10" :key="top" v-on:click="checkStatus(i)">
           <v-list-tile-action>
-            <v-icon>android</v-icon>
+            <v-icon>dashboard</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>{{ top }}</v-list-tile-title>
@@ -36,13 +36,13 @@
                   v-bind:items="applications"
                   v-model="application"
                   label="Select an application"
-                  prepend-icon="android"
+                  prepend-icon="dashboard"
                   autocomplete
                 ></v-select>
               </v-card-text>
               <v-card-actions>
                 <v-dialog v-model="dialog" persistent max-width="290">
-                  <v-btn color="primary" dark slot="activator" v-on:click="checkStatus(application)">Open Dialog</v-btn>
+                  <v-btn color="darl" dark slot="activator" v-on:click="checkStatus(application)">Check status</v-btn>
                   <v-card>
                     <v-card-title class="headline">Status for {{ application }}</v-card-title>
                     <v-card-text>{{ result.text }}</v-card-text>
@@ -85,6 +85,7 @@
     },
     methods: {
       checkStatus: function(appName) {
+        this.result = [];
         this.$http.get('http://localhost:3000/checkStatus/' + appName).then(response => {
           this.result = response.data;
         }, response => {
